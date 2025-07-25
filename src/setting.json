@@ -1,0 +1,41 @@
+{
+    "EnableGameID": true,
+    "Format": "§6🔔 §8<§7{{name}}§8> §7{{msg}}§r",
+    "ChatContent": "\\[.*?]:\\s♫\\s(\\<.*\\>\\s)[\\!！](.*)",
+    "ForwardGroupFormat": "$1$2",
+    "Filtersymbol": "#",
+    "Filtercontent": "帮助",
+    "ForwardServer": {
+        "12345678": [
+            "serverID1",
+            "serverID2"
+        ]
+    },
+    "ForwardGroup": {
+        "serverID1": [
+            12345678
+        ],
+        "serverID2": [
+            12345678,
+            22345678
+        ]
+    },
+    "GroupName": {
+        "12345678": "group1",
+        "22345678": "group2"
+    },
+    "CQCode": {
+        "[CQ:face]": "[表情]",
+        "[CQ:reply]": "[回复]",
+        "[CQ:image]": "[图片]",
+        "[CQ:video]": "[视频]",
+        "[CQ:record]": "[语音]",
+        "[CQ:music]": "[音乐]",
+        "[CQ:redbag]": "[红包]",
+        "[CQ:forward]": "[合并转发消息]",
+        "[CQ:node]": "[合并转发消息]",
+        "[CQ:xml]": "[XML卡片]",
+        "[CQ:json]": "[JSON卡片]",
+        "[CQ:file]": "[文件]"
+    }
+}

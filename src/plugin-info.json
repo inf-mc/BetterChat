@@ -1,0 +1,19 @@
+{
+    "id": "chat-plugin",
+    "name": "BetterChat",
+    "type": "js",
+    "version": "1.0.1",
+    "entryFile": "BetterChat.js",
+    "authors": [
+        {
+            "name": "lingran,MioMiko"
+        }
+    ],
+    "description": "更好的群服互通插件",
+    "tags": [
+        "development",
+        "tool",
+        "information"
+    ],
+    "targetingSerein": ["2.1"]
+}
