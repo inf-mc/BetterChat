@@ -28,14 +28,14 @@ serein.setListener('GroupMessageReceived', (messagePacket) => {
     }
     var userId = messagePacket.oneBotV11.userId
     var rawMessage = replaceCQ(messagePacket.oneBotV11.rawMessage)
-    if (!rawMessage.startsWith('#') && rawMessage != "帮助") {
+    if (!rawMessage.startsWith(config.Filtersymbol) && rawMessage != config.Filtercontent) {
         let nickname = messagePacket.oneBotV11.Sender.nickname
         let card = messagePacket.oneBotV11.Sender.card
         let text = formatText(groupId, userId, nickname, rawMessage, card)
         console.log(text)
         for (let i = 0; i < serverID.length; i++) {
             let serverstat = serein.servers[serverID[i]].info.stat
-            if (serverstat.ServerUp && serverstat.CurrentPlayersInt >0) {
+            if (serverstat.ServerUp && serverstat.CurrentPlayersInt > 0) {
                 try {
                     if (serverstat.Protocol == 0) {
                         serein.servers[serverID[i]].input('tellraw @a {"rawtext":[{"text":' + JSON.stringify(text) + '}]}');
@@ -45,8 +45,8 @@ serein.setListener('GroupMessageReceived', (messagePacket) => {
                 } catch (err) {
                     console.error(err)
                 }
-            }else{
-                console.warn('发送失败：' + serverID[i] + '不在线或无人在线')
+            } else {
+                console.warn('发送失败：' + serverID[i] + '不在线或无玩家在线')
             }
         }
     }
@@ -82,6 +82,5 @@ function formatText(groupId, userId, nickname, rawMessage, card) {
 }
 
 function getUserCache(userId) {
-    //return serein.bindings.records.find(x => x.userId == userId)?.shownName ?? null;
-    return serein.bindings.records.filter(x => x.userId == userId)[0]?.gameIds[0] ?? null;
+    return serein.bindings.records.find(x => x.userId == userId)?.gameIds?.[0] ?? null;
 }

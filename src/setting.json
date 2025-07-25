@@ -1,6 +1,6 @@
 {
     "EnableGameID": true,
-    "Format": "§6🔔 §8<§7{{name}}§8> §7{{msg}}§r",
+    "Format": "{{title}} {{name}}:{{msg}}",
     "ChatContent": "\\[.*?]:\\s♫\\s(\\<.*\\>\\s)[\\!！](.*)",
     "ForwardGroupFormat": "$1$2",
     "Filtersymbol": "#",
