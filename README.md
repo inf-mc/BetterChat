@@ -85,16 +85,15 @@ alt="language">
 3. 插件配置文件中`CQCode`的配置项无需修改。
 
 ## 插件贡献者
-- [@MioMiko](https://github.com/MioMiko)
-- [@lingran7031](https://github.com/lingran7031)
+- [@MioMiko](https://github.com/MioMiko) [@lingran7031](https://github.com/lingran7031)
 
 ## 鸣谢
-|||
-| ------------ | -------------- |
-|<img src="./resources/serein.png" width="120" alt="logo"> |<img src="./resources/inf-logo-x135.png" alt="logo"> |
-|[serein](https://github.com/SereinDev) |[INF](https://github.com/inf-mc) |
-
+<div>
+    <div>
+        <img src="./resources/serein.png" width="120" alt="logo">
+        <img src="./resources/inf-logo-x135.png" alt="logo">
+    </div>
+</div>
 
 ## 插件许可证
-该插件基于Apache-2.0许可证发布，您可以免费使用、修改和分发本插件的代码。
-但是，您必须保留本插件的版权声明和许可证声明。
+该插件基于Apache-2.0许可证发布，您可以免费使用、修改和分发本插件的代码。但是，您必须保留本插件的版权声明和许可证声明。
