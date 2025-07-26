@@ -1,4 +1,5 @@
  # BetterChat
+<img src="https://count.getloli.com/@BetterChat?name=BetterChat&theme=minecraft&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto">
 <img src="https://img.shields.io/badge/version-1.0.1-blue.svg" alt="version">
 <img src="https://img.shields.io/badge/license-Apache--2.0-green.svg" alt="license">
 <img src="https://img.shields.io/badge/language-JavaScript-orange.svg" 
