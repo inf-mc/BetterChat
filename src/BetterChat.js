@@ -1,4 +1,4 @@
-const config = JSON.parse(fs.readFileSync('./Serein/plugins/BetterChat/setting.json'));
+const config = JSON.parse(fs.readFileSync(serein.resolve('setting.json')));
 const chatContent = new RegExp(config.ChatContent)
 
 //监听服务器消息
@@ -34,19 +34,27 @@ serein.setListener('GroupMessageReceived', (messagePacket) => {
         let text = formatText(groupId, userId, nickname, rawMessage, card)
         console.log(text)
         for (let i = 0; i < serverID.length; i++) {
-            let serverstat = serein.servers[serverID[i]].info.stat
-            if (serverstat.ServerUp && serverstat.CurrentPlayersInt > 0) {
-                try {
-                    if (serverstat.Protocol == 0) {
-                        serein.servers[serverID[i]].input('tellraw @a {"rawtext":[{"text":' + JSON.stringify(text) + '}]}');
+            try {
+                let serverstat = serein.servers[serverID[i]].info.stat
+                if (serverstat.ServerUp) {
+                    if (serverstat.CurrentPlayersInt > 0) {
+                        try {
+                            if (serverstat.Protocol == 0) {
+                                serein.servers[serverID[i]].input('tellraw @a {"rawtext":[{"text":' + JSON.stringify(text) + '}]}');
+                            } else {
+                                serein.servers[serverID[i]].input('tellraw @a {"text":' + JSON.stringify(text) + '}');
+                            }
+                        } catch (err) {
+                            console.error(err)
+                        }
                     } else {
-                        serein.servers[serverID[i]].input('tellraw @a {"text":' + JSON.stringify(text) + '}');
+                        console.warn('发送失败：' + serverID[i] + '当前没有玩家在线')
                     }
-                } catch (err) {
-                    console.error(err)
                 }
-            } else {
-                console.warn('发送失败：' + serverID[i] + '不在线或无玩家在线')
+            } catch (err) {
+                if (err.message.includes("'ServerUp' of null")) {
+                    console.warn('发送失败：' + serverID[i] + '未启动或服务器IPv4端口配置错误')
+                }
             }
         }
     }

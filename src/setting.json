@@ -1,28 +1,26 @@
 {
-    "EnableGameID": true,
+    "EnableGameID": false,
     "Format": "{{title}} {{name}}:{{msg}}",
-    "ChatContent": "\\[.*?]:\\s♫\\s(\\<.*\\>\\s)[\\!！](.*)",
-    "ForwardGroupFormat": "$1$2",
+    "ChatContent": ".*Chat.*?\\s(\\<.*\\>\\s.*)",
+    "ForwardGroupFormat": "$1",
     "Filtersymbol": "#",
     "Filtercontent": "帮助",
     "ForwardServer": {
         "12345678": [
-            "serverID1",
-            "serverID2"
+            "velocity",
+            "be1"
         ]
     },
     "ForwardGroup": {
-        "serverID1": [
+        "velocity": [
             12345678
         ],
-        "serverID2": [
-            12345678,
-            22345678
+        "be1": [
+            12345678
         ]
     },
     "GroupName": {
-        "12345678": "group1",
-        "22345678": "group2"
+        "12345678": "【群聊】"
     },
     "CQCode": {
         "[CQ:face]": "[表情]",

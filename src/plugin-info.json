@@ -15,5 +15,5 @@
         "tool",
         "information"
     ],
-    "targetingSerein": ["2.1"]
+    "targetingSerein": ["2.1.0"]
 }
