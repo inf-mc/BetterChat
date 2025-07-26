@@ -1,7 +1,12 @@
  # BetterChat
 <img src="https://count.getloli.com/@BetterChat?name=BetterChat&theme=minecraft&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto">
-<img src="https://img.shields.io/badge/version-1.0.1-blue.svg" alt="version"><img src="https://img.shields.io/badge/license-Apache--2.0-green.svg" alt="license"><img src="https://img.shields.io/badge/language-JavaScript-orange.svg" 
+
+<div>
+    <img src="https://img.shields.io/badge/version-1.0.1-blue.svg" alt="version">
+    <img src="https://img.shields.io/badge/license-Apache--2.0-green.svg" alt="license">
+    <img src="https://img.shields.io/badge/language-JavaScript-orange.svg" 
 alt="language">
+</div>
 
 ## 项目介绍
 这是一个基于Serein JS引擎开发的插件，适用于Serein 2.1+版本。
