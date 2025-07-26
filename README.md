@@ -75,7 +75,7 @@ alt="language">
     ```
 
 ## 插件使用
-1. 下载插件压缩包，解压到`./Serein/Serein/plugins`目录下。
+1. [下载插件压缩包](https://github.com/inf-mc/BetterChat/releases)，解压到`./Serein/Serein/plugins`目录下。
 2. 插件安装完成后，在Serein中重新加载所有插件来启用插件。
 2. 插件配置完成后，在Serein中测试插件是否正常工作。
  
