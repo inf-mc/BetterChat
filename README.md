@@ -1,6 +1,6 @@
  # BetterChat
 <img src="https://img.shields.io/badge/version-1.0.1-blue.svg" alt="version">
-<img src="https://img.shields.io/badge/license-MIT-green.svg" alt="license">
+<img src="https://img.shields.io/badge/license-Apache--2.0-green.svg" alt="license">
 <img src="https://img.shields.io/badge/language-JavaScript-orange.svg" 
 alt="language">
 
@@ -85,12 +85,12 @@ alt="language">
 - [@lingran7031](https://github.com/lingran7031)
 
 ## 鸣谢
-|   |   |
+|||
 | ------------ | -------------- |
 |<img src="./resources/serein.png" width="120" alt="logo"> |<img src="./resources/inf-logo-x135.png" alt="logo"> |
 |[serein](https://github.com/SereinDev) |[INF](https://github.com/inf-mc) |
 
 
 ## 插件许可证
-该插件基于MIT许可证发布，您可以免费使用、修改和分发本插件的代码。
+该插件基于Apache-2.0许可证发布，您可以免费使用、修改和分发本插件的代码。
 但是，您必须保留本插件的版权声明和许可证声明。
