@@ -1,12 +1,16 @@
 {
-    "id": "chat-plugin",
+    "$schema": "https://sereincommunity.github.io/json-schemas/v2/plugin-info.json",
+    "id": "BetterChat",
     "name": "BetterChat",
     "type": "js",
     "version": "1.0.1",
     "entryFile": "BetterChat.js",
     "authors": [
         {
-            "name": "lingran,MioMiko"
+            "name": "lingran7031"
+        },
+        {
+            "name": "MioMiko"
         }
     ],
     "description": "更好的群服互通插件",
@@ -15,5 +19,8 @@
         "tool",
         "information"
     ],
-    "targetingSerein": ["2.1.0"]
+    "targets": {
+        "min": "2.1.0",
+        "max": "2.1.0"
+    }
 }

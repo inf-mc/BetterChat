@@ -93,10 +93,10 @@ alt="language">
 <div>
     <div>
         <a href="https://sereindev.github.io/">
-            <img src="./resources/serein.png" width="120" alt="logo">
+           <img src="./resources/serein.png" width="120" alt="logo">
         </a>
         <a href="https://wiki.infinf.info/">
-            <img src="./resources/inf-logo-x135.png" alt="logo">
+           <img src="./resources/inf-logo-x135.png" alt="logo">
         </a>
     </div>
 </div>
