@@ -1,5 +1,4 @@
 {
-    "$schema": "https://sereincommunity.github.io/json-schemas/v2/plugin-info.json",
     "id": "BetterChat",
     "name": "BetterChat",
     "type": "js",
