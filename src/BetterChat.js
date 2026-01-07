@@ -27,8 +27,7 @@ serein.setListener('GroupMessageReceived', (messagePacket) => {
         return
     }
     var userId = messagePacket.oneBotV11.userId
-    let rawMessage = decodeHtmlEntities(messagePacket.oneBotV11.rawMessage);
-    rawMessage = replaceCQ(rawMessage);
+    var rawMessage = replaceCQ(messagePacket.oneBotV11.rawMessage)
     if (!rawMessage.startsWith(config.Filtersymbol) && rawMessage != config.Filtercontent) {
         let nickname = messagePacket.oneBotV11.Sender.nickname
         let card = messagePacket.oneBotV11.Sender.card
@@ -92,16 +91,4 @@ function formatText(groupId, userId, nickname, rawMessage, card) {
 
 function getUserCache(userId) {
     return serein.bindings.records.find(x => x.userId == userId)?.gameIds?.[0] ?? null;
-}
-
-function decodeHtmlEntities(str) {
-    if (!str) return str;
-    return str
-        .replace(/&#91;/g, '[')
-        .replace(/&#93;/g, ']')
-        .replace(/&amp;/g, '&')
-        .replace(/&lt;/g, '<')
-        .replace(/&gt;/g, '>')
-        .replace(/&quot;/g, '"')
-        .replace(/&#39;/g, "'");
 }
